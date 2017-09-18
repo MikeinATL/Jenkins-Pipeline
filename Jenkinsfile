@@ -4,7 +4,6 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
-                sh 'cd /Users/melissa/GitHub/automation'
                 sh 'python test.py'
             }
         }
