@@ -5,7 +5,7 @@ pipeline {
         stage ('Create Some General output'){
             steps {
                 echo pwd()
-                sh '"'python -u test.py'
+                sh 'python -u test.py'
 
                 // Make the output directory.
                 sh '"'mkdir -p /Users/melissa/output'
