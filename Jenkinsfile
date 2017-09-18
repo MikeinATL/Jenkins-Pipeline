@@ -7,7 +7,7 @@ pipeline {
                 echo pwd()
                 sh 'python -u test.py'
 
-                echo 'whoami'
+                echo `whoami`
                 // Make the output directory.
                 //sh 'mkdir -p /Users/melissa/output'
 
