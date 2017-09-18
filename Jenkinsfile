@@ -11,10 +11,10 @@ pipeline {
                 sh 'mkdir -p /Users/melissa/output'
 
                 // Write an useful file, which is needed to be archived.
-                writeFile file: 'output/usefulfile.txt', text: 'This file is useful, and we will need to archive it.''
+                writeFile file: 'output/usefulfile.txt', text: 'This file is useful, and we will need to archive it.'
 
                 // Write a useless file, which is not needed to be archived.
-                writeFile file: 'output/uselessfile.md', text: 'This file is useless, no need to archive it.''
+                writeFile file: 'output/uselessfile.md', text: 'This file is useless, no need to archive it.'
             }
         }
        
